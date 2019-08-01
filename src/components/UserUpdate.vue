@@ -21,29 +21,24 @@
 				</div>
 			</form>
 		</div>
-		<div>
-			<!-- <footerfile></footerfile> -->
-		</div>
 	</div>
 </template>
 
 <script>
 import headerfile from './headerfile.vue'
-import footerfile from './footer.vue'
 import axios from 'axios';
 
 export default {
 	name:"UserUpdate",
 	components:{
-		headerfile,
-		footerfile,
+		headerfile
 	},
 	computed:{
     newuser(){
-    	return this.$store.getters.newuser
+		return this.$store.state.newuser;
       },
     users(){
-      return this.$store.getters.users
+      return this.$store.state.users;
     }
 	},
 	methods:{

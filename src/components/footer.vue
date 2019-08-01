@@ -20,9 +20,9 @@ export default {
 <style scope>
 .footer {
   background-color: #999;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  padding: 1rem;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
 }
 </style>

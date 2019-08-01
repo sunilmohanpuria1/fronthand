@@ -14,15 +14,10 @@
         <button type="submit" class="btn btn-default" >Submit</button>
       </form>
       </div>
-      <div>
-      <footerfile>
-      </footerfile>
-      </div>
   </div>
 </template>
 
 <script>
-import footerfile from './footer';
 import axios from 'axios';
 export default {
   name: 'useradd',
@@ -38,7 +33,6 @@ export default {
 
   },
   components:{
-    footerfile
   },
   methods:{
     postreqest:function(){

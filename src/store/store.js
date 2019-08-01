@@ -12,7 +12,6 @@ export default new Vuex.Store(
         mutations:{
             GET_USER(state, user){
                 state.newuser = user;
-                
               },
             ADD_USER(state){
                 state.users.push({
@@ -25,7 +24,7 @@ export default new Vuex.Store(
                 commit('GET_USER', user);
               },
               adduser({commit}){
-                commit('ADD_USER')
+                commit('ADD_USER');
               },
         },
         getters: {

@@ -13,9 +13,9 @@ Vue.use(BootstrapVue)
 
 Vue.use(VueRouter)
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/useradd', component: useradd },
-  { path:'/UserUpdate', component:UserUpdate}
+  { path: '/',  name: 'home', component: HomePage },
+  { path: '/useradd',  name: 'useradd', component: useradd },
+  { path:'/UserUpdate',  name: 'UserUpdate', component:UserUpdate}
 ]
 Vue.config.productionTip = false;
 
